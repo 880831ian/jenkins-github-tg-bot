@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  jenkins:
+    build: ./jenkins/
+    container_name: jenkins
+    ports:
+      - 8080:8080
+      - 50000:50000
+    restart: always
+    volumes:
+      - ./jenkins_home:/var/jenkins_home
