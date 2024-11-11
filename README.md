@@ -16,7 +16,7 @@
 
 ### 安裝
 
-這邊會使用 Jenkins 提供的 [官方 LTS 映像檔](https://hub.docker.com/layers/jenkins/jenkins/jenkins/lts-jdk11/images/sha256-ec98cb8b367b0f9426f71345efe11e001c901704cea0e61fd91beb37af34ef98?context=explore) 來作為基底，因為我們要多安裝測試程式 [yamllint](https://yamllint.readthedocs.io/en/stable/index.html)，所以就自己寫一個 Docker-compose：(同樣的程式碼會放在 [GitHub](https://github.com/880831ian/Jenkins)，也直接包成映像檔放在 [DockerHub](https://hub.docker.com/r/880831ian/jenkins)，歡迎大家自行取用)
+這邊會使用 Jenkins 提供的 [官方 LTS 映像檔](https://hub.docker.com/layers/jenkins/jenkins/jenkins/lts-jdk11/images/sha256-ec98cb8b367b0f9426f71345efe11e001c901704cea0e61fd91beb37af34ef98?context=explore) 來作為基底，因為我們要多安裝測試程式 [yamllint](https://yamllint.readthedocs.io/en/stable/index.html)，所以就自己寫一個 Docker-compose：(同樣的程式碼會放在 [GitHub](https://github.com/880831ian/jenkins-github-tg-bot)，也直接包成映像檔放在 [DockerHub](https://hub.docker.com/r/880831ian/jenkins-github-tg-bot)，歡迎大家自行取用)
 
 <br>
 
@@ -24,7 +24,7 @@
 
 <br>
  
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/yamllint.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/yamllint.png)
 
 可以看到如果不符合 yaml 規範就會跳出錯誤訊息。
 
@@ -100,7 +100,7 @@ $ docker-compose up -d
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/unlock.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/unlock.png)
 
 <br> 
 
@@ -132,7 +132,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/plugins.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/plugins.png)
 
 <br> 
 
@@ -140,7 +140,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/install.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/install.png)
 
 <br> 
 
@@ -148,7 +148,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/create_adminuser.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/create_adminuser.png)
 
 <br> 
 
@@ -156,7 +156,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/done.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/done.png)
 
 <br> 
 
@@ -168,7 +168,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/create_job.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/create_job.png)
 
 <br> 
 
@@ -176,7 +176,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/disk.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/disk.png)
 
 可以看到這邊有不同的專案類型可以選擇，**Free-Style** 以及 **Pipeline** 這兩種類型的專案基本上就涵蓋大部分的需求。**Free-Style** 類型的專案提供了非常大的彈性讓使用者來做原始碼管理以及建置。如果建置流程涉及多個專案，則可以使用 **Pipeline** 類型的專案來組合及定義建置邏輯。
 
@@ -186,7 +186,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/describe.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/describe.png)
 
 要記得幫每一個專案都加上描述，讓其他人知道該專案的用途或是使用時機等。
 
@@ -196,7 +196,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/shell.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/shell.png)
 
 <br>
 
@@ -204,7 +204,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 <br>
  
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/df-h.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/df-h.png)
 
 <br>
 
@@ -216,7 +216,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 <br>
  
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/build.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/build.png)
 
 <br>
 
@@ -225,7 +225,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 <br>
  
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/console.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/console.png)
 
 這樣我們的第一個 Jenkins Job 就設定完成囉！Jenkins 也確實的執行我們所設定的指令，並將系統的使用狀況呈現在終端機的輸出上。
 <br>
@@ -244,11 +244,11 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 #### HTTPS
 
-接下來我們先建立一個新的 Job，選擇 Free-style 模式，這次要在原始碼管理裡面選擇 Git，在 Repositories > Repository URL 裡面輸入我們這次要測試的 [repository URL](https://github.com/880831ian/Jenkins)：
+接下來我們先建立一個新的 Job，選擇 Free-style 模式，這次要在原始碼管理裡面選擇 Git，在 Repositories > Repository URL 裡面輸入我們這次要測試的 [repository URL](https://github.com/880831ian/jenkins-github-tg-bot)：
 
 <br>
  
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/repository.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/repository.png)
 
 <br>
 
@@ -258,7 +258,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 <br>
  
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/ssh_error.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/ssh_error.png)
 
 會有錯誤訊息是因為我們還沒有把 Jenkins 與 GitHub 做 SSH 金鑰配對，所以 GitHub 拒絕 Jenkins 透過 SSH 存取。那要怎麼解決呢？
 
@@ -286,7 +286,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 <br>
  
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/cron.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/cron.png)
 
 <br>
 
@@ -298,7 +298,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 1. 進入 GitHub 首頁，點選右上角下拉選單，點選 **Settings**：
  
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/setting_1.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/setting_1.png)
 
 <br>
 
@@ -306,7 +306,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/setting_2.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/setting_2.png)
 
 <br>
 
@@ -314,7 +314,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/setting_3.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/setting_3.png)
 
 <br>
 
@@ -324,7 +324,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/setting_4.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/setting_4.png)
 
 <br>
 
@@ -332,7 +332,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/setting_5.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/setting_5.png)
 
 <br>
 
@@ -340,7 +340,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/setting_6.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/setting_6.png)
 
 <br>
 
@@ -348,7 +348,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/setting_7.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/setting_7.png)
 
 <br>
 
@@ -358,7 +358,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/setting_8.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/setting_8.png)
 
 <br>
 
@@ -373,7 +373,7 @@ done
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/setting_9.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/setting_9.png)
 
 這邊利用一個簡單的 Shell Script 迴圈來對所有 YAML file 進行 yamllint 的檢查，最後點選儲存離開。
 
@@ -387,7 +387,7 @@ done
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/setting_10.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/setting_10.png)
 
 <br>
 
@@ -398,7 +398,7 @@ done
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/setting_11.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/setting_11.png)
 
 <br>
 
@@ -412,7 +412,7 @@ done
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/setting_12.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/setting_12.png)
 
 <br>
 
@@ -423,7 +423,7 @@ done
 <br>
 
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/test_1.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/test_1.png)
 
 <br>
 
@@ -431,7 +431,7 @@ done
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/test_2.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/test_2.png)
 
 <br>
 
@@ -439,15 +439,15 @@ done
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/test_3.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/test_3.png)
 
 <br>
 
-接下來我們先修改一下 yaml 的檔案，後重新 push 到 Github 上，並觀察 Jenkins 會不會自動建置 ！(修改位置大家可以直接看 [Commit 結果](https://github.com/880831ian/Jenkins/commit/729556412ef8796477a351040604aad8c8083c05))
+接下來我們先修改一下 yaml 的檔案，後重新 push 到 Github 上，並觀察 Jenkins 會不會自動建置 ！(修改位置大家可以直接看 [Commit 結果](https://github.com/880831ian/jenkins-github-tg-bot/commit/729556412ef8796477a351040604aad8c8083c05))
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/test_4.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/test_4.png)
 
 當你 push 完後，發現它會自動建置，請因為我們修改成正確格式，所以他也建置成功囉！
 
@@ -457,7 +457,7 @@ done
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/test_5.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/test_5.png)
 
 <br>
 
@@ -471,7 +471,7 @@ done
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/trigger_1.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/trigger_1.png)
 
 <br>
 
@@ -479,7 +479,7 @@ done
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/trigger_2.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/trigger_2.png)
 
 <br>
 
@@ -487,7 +487,7 @@ done
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/trigger_3.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/trigger_3.png)
 
 <br>
 
@@ -497,7 +497,7 @@ done
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/trigger_4.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/trigger_4.png)
 
 <br>
 
@@ -505,7 +505,7 @@ done
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/trigger_5.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/trigger_5.png)
 
 可以看到這邊要先輸入 Token，那 Token 就必須去官網註冊後設定。
 
@@ -515,7 +515,7 @@ done
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/trigger_6.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/trigger_6.png)
 
 <br>
 
@@ -523,7 +523,7 @@ done
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/trigger_7.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/trigger_7.png)
 
 <br>
 
@@ -531,7 +531,7 @@ done
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/trigger_8.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/trigger_8.png)
 
 <br>
 
@@ -539,7 +539,7 @@ done
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/trigger_9.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/trigger_9.png)
 
 <br>
 
@@ -547,7 +547,7 @@ done
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/trigger_10.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/trigger_10.png)
 
 <br>
 
@@ -570,7 +570,7 @@ done
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/trigger_11.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/trigger_11.png)
 
 <br>
 
@@ -591,17 +591,17 @@ done
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/trigger_12.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/trigger_12.png)
 
 <br>
 
 #### Telegram 通知測試
 
-最後我們都設定好了，就來測試一下吧！我們先故意將程式碼格式用錯，[讓他先跳出錯誤](https://github.com/880831ian/Jenkins/commit/e88d35d56f2b2d1b999682c0f748431999bb4b9e)，[再修改](https://github.com/880831ian/Jenkins/commit/ec0e9f9c2148cecde6f70ec391d4c775fc180029)，來看看結果如何吧！(文字連結是對應的 Commit )
+最後我們都設定好了，就來測試一下吧！我們先故意將程式碼格式用錯，[讓他先跳出錯誤](https://github.com/880831ian/jenkins-github-tg-bot/commit/e88d35d56f2b2d1b999682c0f748431999bb4b9e)，[再修改](https://github.com/880831ian/jenkins-github-tg-bot/commit/ec0e9f9c2148cecde6f70ec391d4c775fc180029)，來看看結果如何吧！(文字連結是對應的 Commit )
 
 <br>
 
-![圖片](https://raw.githubusercontent.com/880831ian/Jenkins/master/images/trigger_13.png)
+![圖片](https://raw.githubusercontent.com/880831ian/jenkins-github-tg-bot/master/images/trigger_13.png)
 
 <br>
 
